@@ -38,5 +38,19 @@ Also from information we can check the index range, columns, column names omly o
 - We are also going to see the correaltion coefficient for each column with column.
 ![image](https://user-images.githubusercontent.com/78008979/236596186-e31ff0fb-a570-49e8-82eb-48a8bf7dc84f.png)
 
+Moving on from the correaltion we are going to plot some graphs by using different column from the dataset. Here we are using seaborn library as sb to plot the columns
+![image](https://user-images.githubusercontent.com/78008979/236651989-ae31ec0f-f4ce-4a97-8043-0b45d4f49a91.png)
+![image](https://user-images.githubusercontent.com/78008979/236652011-beeb2b97-62ee-4098-ae64-7c3a7e97f668.png)
+![image](https://user-images.githubusercontent.com/78008979/236652017-6f98782b-7ccd-4c1b-8348-da3c951aed57.png)
 
-going to complete the rest 
+After the above plots we will draw a pairplot to see the overall range within the data, to chech the realtion of our dataset from the pairplot
+
+# Preprocessing
+Different preprocessing has been done for each model, so that the result may differ. For the first model the data has been preprocessed by defining a fnx. that take raw input for each image and return y for categorical . Then it defines x_as_array to be all of the values from raw with their index being 1. It then reshapes this into a vector with num images per row and one column. Finally, it normalizes this vector so that its length is equal to 255 (the maximum value).
+
+For second model the images are already preprocess only the dataset are divided by 255.0 value for preprocessing .For the third model the preprocessing is done with each fnx. when it is defined.
+
+For overall processing of data it is all about reshapping the image and the values to fit the CNN models
+
+# Model 1
+A function for counting the percentage for each cloth type in dataset. 
